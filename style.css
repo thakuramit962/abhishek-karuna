@@ -1,0 +1,519 @@
+*, html, body {
+
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./main-bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.innerBox {
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    min-height: calc(100vh - 4rem);
+    box-shadow: 0 0 13px -4px #83838370;
+    background-size: cover;
+    flex-flow: column;
+}
+
+.innerBox .couple {
+    max-height: 230px;
+}
+
+.innerBox .flower {
+    max-height: 80px;
+}
+
+.mainGreet {
+    flex: 1;
+    width: 100%;
+    font-family: MonteCarlo, cursive;
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    background-size: contain;
+    background-image: url('./circle-flwr-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: #c1836d;
+    margin-block: 0;
+}
+
+.blockDates .sideC {
+    font-family: Cormorant Garamond, serif;
+    border-block: 1px solid;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #823204;
+}
+
+
+/*for second page*/
+.weddingDescription {
+    margin: 80px auto 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #b76500;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: center;
+    max-width: 300px;
+    font-family: Satisfy, cursive;
+}
+
+.weddingDescription span {
+    font-family: Italianno, cursive;
+    font-size: 2.3rem;
+    color: rgb(129, 61, 35);
+}
+
+
+/*third page*/
+.thirdPage {
+    padding-top: 1.5rem;
+}
+
+.personSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.personSection.groom {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.personSection.bride {
+    margin-top: -75px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.personSection img {
+    max-height: 200px;
+}
+
+.personSection p {
+    font-family: MonteCarlo, cursive;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 1.5rem;
+    color: #c1836d;
+    width: 165px;
+}
+
+.personSection p span.parents {
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-family: Montserrat Alternates, sans-serif;
+    color: #9b89c0;
+}
+
+.personSection p span.and {
+    font-family: "Great Vibes", cursive;
+    color: rgb(193, 131, 109);
+    font-size: 1.3rem;
+}
+
+.timerBox {
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.timerBox .time {
+    flex-flow: column;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 26px;
+    color: #c1836d;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: Montserrat Alternates, sans-serif;
+}
+
+.timerBox .time .count {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: Montserrat Alternates, sans-serif;
+    font-weight: 500;
+}
+
+.timerBox .time span {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+
+/*fourth page*/
+.menuContainer {
+    padding-top: 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menuContainer .dhol {
+    height: clamp(5rem, 20vw, 7rem);
+}
+
+.menuContainer .pageHead {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: Great Vibes, cursive;
+    text-align: center;
+    color: #d9947f;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.dholAndElephant {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.dholAndElephant .littleStars {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: Dancing Script, cursive;
+    text-align: center;
+    color: #9a4e3a;
+}
+
+.menuContainer .event {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding: 0.5rem 1rem 0;
+    border-radius: 18px;
+    border: 1px solid #FFDBD2;
+}
+
+.menuContainer .event .date {
+    font-size: 0.8rem;
+    font-family: Montserrat Alternates, sans-serif;
+    text-align: center;
+    color: #d9947f;
+}
+
+.menuContainer .floralBorder {
+    height: 1rem;
+}
+
+.menuContainer .schedule {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    color: #d9947f;
+    font-family: Great Vibes, cursive;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 12px;
+}
+
+.menuContainer .schedule.venue {
+    font-family: Cormorant Garamond, serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 0px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.menuContainer .schedule .divider {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-bottom: 1px dotted #d9947f;
+}
+
+
+.cordialInvitationBlock {
+    -webkit-background-size: 80vh;
+    background-size: 80vh;
+    -webkit-background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rsvpBox {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rsvpBox .title {
+    font-size: 0.8rem;
+    font-family: Montserrat Alternates, sans-serif;
+    text-align: center;
+    color: #d9947f;
+}
+
+.rsvpBox .names {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    color: #d9947f;
+    font-family: Dancing Script, cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+.cordialInvitation {
+    flex: 2;
+    flex-flow: column;
+}
+
+.cordialInvitation .p1 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #5b745e;
+    font-family: Cormorant Garamond, serif;
+    font-size: 1.3rem;
+}
+
+.cordialInvitation .p2 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #5b745e;
+    font-family: Dancing Script, cursive;
+    font-size: 1rem;
+}
+
+.cordialInvitation .p3 {
+    margin: 1rem 0 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #ef9898;
+    font-family: Great Vibes, cursive;
+    font-size: 2.5rem;
+}
+
+
+/*fifth page*/
+.mapBox {
+    width: 100%;
+}
+
+.mapBox .map {
+    border: 0;
+    width: 80%;
+    max-height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px -3px #d8937e;
+    margin-top: 10px;
+}
+
+.mapBox .title {
+    font-size: 0.8rem;
+    font-family: Montserrat Alternates, sans-serif;
+    text-align: center;
+    color: #d9947f;
+}
+
+
+.mobile {
+    gap: 4px;
+    font-family: Satisfy, cursive;
+    color: #5b745e;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.mobile svg {
+    height: 1rem;
+    width: 1rem;
+    background: #5b745e;
+    fill: #fff;
+    border-radius: 50vh;
+    padding: 5px;
+}
+
+
+.hideFirstPage{
+    transform: scaleY(0);
+    top: 0;
+    opacity: 0;
+    /*transition: all 1000ms ease;*/
+}
+.displayNone{
+    display: none;
+}
